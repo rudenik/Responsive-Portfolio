@@ -30,6 +30,18 @@ header {
     border-width: 5px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+li{
+    float: right;
+    margin: 10px;
+}
+ul li{
+    border-right:1px solid #cccccc;
+    margin-right:20px;
+    padding-right:20px;
+}
+ul li:first-child{
+    border: none;
+}
 
 #name {
     padding: 30px;
@@ -135,17 +147,85 @@ body{
     border-width: 5px;
 }
 img {
-  border-radius: 33%;
-  -webkit-transition: -webkit-transform .8s ease-in-out;
-  -ms-transform: -ms-transform .8s ease-in-out;
-  -o-transform: -o-transform .8s ease-in-out;
+    margin: 20px;
+    border-radius: 33%;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    -ms-transform: -ms-transform .8s ease-in-out;
+    -o-transform: -o-transform .8s ease-in-out;
     -moz-transition: -moz-transform .8s ease-in-out;
-          transition:         transform .8s ease-in-out;
+    transition:         transform .8s ease-in-out;
+    float: left;
 }
+
 img:hover {
   -webkit-transform: rotate(360deg);
   -ms-transform: rotate(360deg);
   -o-transform: rotate(360);
   -moz-transform: rotate(360deg);
           transform: rotate(360deg);
+}
+
+@media screen and (max-width: 980px){
+    #bio, #projects, #contact, #nav{
+        width:90%;
+        
+        
+}
+body{
+    flex:none;
+}
+#name{
+    margin-left: 20px;
+}
+img#bioimage{
+    float: left;
+}
+#biotext{  
+    margin: 0;
+    
+}
+
+@media screen and (max-width: 768px){
+    #bio, #projects, #contact{
+        width:90%;
+}
+
+@media screen and (max-width: 640px){
+    #bio, #projects, #contact, #nav{
+        width:90%;
+    }
+    header{
+        margin-left: 0;
+    }
+    #name{
+        text-align: center;
+        float: clear;
+        padding: 20px;
+        width:100%;
+        margin: 0;
+    }
+    #nav{
+        padding: 10px;
+        margin-top: 60px;
+        text-align: center;
+        line-height: 3em;
+    }
+    img#bioimage{
+        width: 90%;
+        height: 100%;
+        margin-right: 20px;
+    }
+    .image1, .image2, .image3, .image4, .image5{
+        margin: 0px;
+    }
+    h3{
+       left: 20px;
+       width: 88%;
+       top: 60%;
+
+    }
+    img{
+        width: 90%;
+        height: 90%;
+    }
 }
