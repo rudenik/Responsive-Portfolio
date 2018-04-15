@@ -195,7 +195,7 @@ img#bioimage{
         width:90%;
     }
     header{
-        margin-left: 0;
+        position: static;
     }
     #name{
         text-align: center;
