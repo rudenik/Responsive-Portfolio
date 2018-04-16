@@ -207,11 +207,14 @@ img#bioimage{
     }
     #nav{
         padding: 20px;
-        margin-top: 20px;
-        margin-right: 3em;
+        margin: 20px auto auto auto;
         text-align: center;
         line-height: 2em;
         width: 100%;
+    }
+    ul{
+        width: 70%;
+        margin: auto;
     }
     img#bioimage{
         width: 90%;
