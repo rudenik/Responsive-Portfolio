@@ -238,4 +238,7 @@ img#bioimage{
     margin-right: 20px;
     width: 98%;
     }
+    footer, header{
+        width:100%;
+    }
 }
