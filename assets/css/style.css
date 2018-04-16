@@ -168,9 +168,7 @@ img:hover {
 
 @media screen and (max-width: 980px){
     #bio, #projects, #contact, #nav{
-        width:90%;
-        
-        
+        width:90%;     
 }
 body{
     flex:none;
@@ -193,29 +191,34 @@ img#bioimage{
 
 @media screen and (max-width: 640px){
     #bio, #projects, #contact{
-        width:90%;
+        width:80%;
     }
     header{
         position: static;
     }
+    footer, header{
+        width:100%;
+    }
     #name{
         text-align: center;
         float: clear;
-        padding: 20px;
+        padding: 20px 0px 20px 0px;
         width:100%;
         margin: 0;
     }
     #nav{
-        padding: 10px;
-        margin: 20px auto auto auto;
+        padding: 0px;
+        margin: 20px 0 0 0;
         text-align: center;
         line-height: 2em;
+        width: 100%;
      
     }
     ul{
-        width: 70%;
+        width: 80%;
         margin: auto;
-    }
+        padding: 10px;
+    } 
     img#bioimage{
         width: 90%;
         height: 100%;
@@ -238,7 +241,5 @@ img#bioimage{
     margin-right: 20px;
     width: 98%;
     }
-    footer, header{
-        width:100%;
-    }
+    
 }
