@@ -206,11 +206,11 @@ img#bioimage{
         margin: 0;
     }
     #nav{
-        padding: 20px;
+        padding: 10px;
         margin: 20px auto auto auto;
         text-align: center;
         line-height: 2em;
-        width: 100%;
+     
     }
     ul{
         width: 70%;
