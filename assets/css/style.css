@@ -187,8 +187,8 @@ img#bioimage{
 @media screen and (max-width: 768px){
     #bio, #projects, #contact{
         width:90%;
+    }
 }
-
 @media screen and (max-width: 640px){
     #bio, #projects, #contact{
         width:80%;
@@ -241,6 +241,7 @@ img#bioimage{
     margin-right: 20px;
     width: 98%;
     }
+}
     @media screen and (max-width: 570px){
     
     #name{
@@ -251,5 +252,4 @@ img#bioimage{
         margin: auto;
         padding: 10px;
     } 
-}
 }
