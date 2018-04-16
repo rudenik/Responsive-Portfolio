@@ -206,9 +206,11 @@ img#bioimage{
     }
     #nav{
         padding: 10px;
-        margin-top: 60px;
+        margin-top: 20px;
+        margin-right: 0px;
+        float: center;
         text-align: center;
-        line-height: 3em;
+        line-height: 2em;
     }
     img#bioimage{
         width: 90%;
