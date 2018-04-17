@@ -192,12 +192,15 @@ img#bioimage{
 @media screen and (max-width: 640px){
     #bio, #projects, #contact{
         width:80%;
+        
     }
     header{
         position: static;
+        width: 100%;
+        
     }
-    footer, header{
-        width:100%;
+    footer{
+        width:98%;
     }
     #name{
         text-align: center;
@@ -212,13 +215,19 @@ img#bioimage{
         text-align: center;
         line-height: 2em;
         width: 100%;
+        
      
     }
     ul{
-        width: 85%;
+        width: 80%;
         margin: auto;
         padding: 10px;
+        float: clear;
+        
     } 
+    ul li:first-child{
+        padding-right: 40px;
+    }
     img#bioimage{
         width: 90%;
         height: 100%;
@@ -241,9 +250,17 @@ img#bioimage{
     margin-right: 20px;
     width: 98%;
     }
+    textarea{
+    height: 120px;
+    padding-bottom: 0px;
+    }
+
 }
     @media screen and (max-width: 570px){
-    
+    #bio, #projects, #contact{
+        width:70%;
+    }
+
     #name{
         padding: 20px 9px 20px 0px;
     }
@@ -252,4 +269,8 @@ img#bioimage{
         margin: auto;
         padding: 10px;
     } 
+    ul li:first-child{
+        /* padding-right: 10px; 
+        I think I need to set a min-Width for this property to work right? As well as  problem with the footer */
+    }
 }
