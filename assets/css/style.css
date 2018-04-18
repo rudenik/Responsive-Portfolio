@@ -15,6 +15,7 @@ h2 {
 }
 html, body {
     height: 100%;
+    width: 100%;
 }
 a:link, a:visited {
     color: #777777;
@@ -188,26 +189,28 @@ img#bioimage{
     #bio, #projects, #contact{
         width:90%;
     }
+    html, body, header, footer{
+        width:100%;
+        
+    }
+
 }
 @media screen and (max-width: 640px){
+
+    html, body, header, footer{
+        width:100%;
+        
+    }
+
     #bio, #projects, #contact{
         width:80%;
         
     }
-    header{
-        position: static;
-        width: 100%;
-        
-    }
-    footer{
-        width:98%;
-    }
     #name{
         text-align: center;
-        float: clear;
-        padding: 20px 5px 20px 0px;
+        padding: 20px 40px 20px 0px;
         width:100%;
-        margin: 0;
+        margin: auto;
     }
     #nav{
         padding: 0px;
@@ -219,14 +222,14 @@ img#bioimage{
      
     }
     ul{
-        width: 80%;
+        width: 100%;
         margin: auto;
-        padding: 10px;
+        padding-right: 100px;
         float: clear;
         
     } 
     ul li:first-child{
-        padding-right: 40px;
+        padding-right: 175px;
     }
     img#bioimage{
         width: 90%;
@@ -256,21 +259,54 @@ img#bioimage{
     }
 
 }
-    @media screen and (max-width: 570px){
+@media screen and (max-width: 414px){
+    html, body, header, footer{
+        width:100%;
+        
+    }
     #bio, #projects, #contact{
-        width:70%;
+        width:80%;
+        margin-left: 23px;
     }
 
-    #name{
-        padding: 20px 9px 20px 0px;
-    }
-    ul{
-        width: 100%;
-        margin: auto;
-        padding: 10px;
-    } 
     ul li:first-child{
-        /* padding-right: 10px; 
-        I think I need to set a min-Width for this property to work right? As well as  problem with the footer */
+        padding-right: 70px;
+        margin-right: 0px;
+    }
+
+}
+    @media screen and (max-width: 375px){
+    html, body, header, footer{
+        width:100%;
+        
+    }
+    #bio, #projects, #contact{
+        width:80%;
+        margin-left: 17px;
+    }
+
+    #nav{
+        margin: 0px;
+        padding: 0px;
+    }
+    ul li:first-child{
+        padding-right: 45px;
     }
 }
+
+
+    @media screen and (max-width: 320px){
+        html, body, header, footer{
+            width:100%;
+            
+        }
+        #bio, #projects, #contact{
+            width:80%;
+            margin-left: 10px;
+        }
+        ul li:first-child{
+            margin-right: 0px;
+            padding-right: 20px;
+        }
+    }
+} 
