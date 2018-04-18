@@ -201,6 +201,9 @@ img#bioimage{
         width:100%;
         
     }
+    header{
+        padding-right: 40px;
+    }
 
     #bio, #projects, #contact{
         width:80%;
